@@ -1,0 +1,17 @@
+body
+{
+margin:0;
+padding:0;
+}
+.box{
+    position: relative;
+    max-width: 400 px;
+    padding : 50px;
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 5 20px 15px rgba(5, 35, 0, .5);
+}
+.box h2{
+    margin: 0 0 20px;
+    padding:0;
+    color:#044463;
+}

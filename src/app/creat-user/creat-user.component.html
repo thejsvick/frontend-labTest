@@ -1,0 +1,67 @@
+<div class="col-md-6 offset-md-3">
+   
+    <link rel="stylesheet" href = "creat-user.component.css">
+    
+    <form (ngSubmit) = "onSubmit()">
+        <div class="box">
+            <h3 class="text-center" >Add Patient </h3>
+        <div class="form-group">
+            <label> First Name</label>
+            <input type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "user.firstName" name = "firstName">
+        </div>
+    
+        <div class="form-group">
+            <label> Last Name</label>
+            <input type="text" class ="form-control" id = "lastName"
+                [(ngModel)] = "user.lastName" name = "lastName">
+        </div>
+
+        <div class="form-group">
+            <label> Password </label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="user.password" name="password">
+        </div>
+        
+
+        <div class="form-group">
+            <label> Email Id</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "user.emailId" name = "emailId">
+        </div>
+
+        <div class="form-group">
+            <label> Mobile </label>
+            <input type="text" class ="form-control" id = "mobilenum"
+                [(ngModel)] = "user.mobilenum" name = "mobilenum">
+        </div>
+                
+                   <h3 class="text-center" > Appoinment </h3>
+               <div class="form-group">
+                   <label> Test name </label>
+                   <select type="text" class ="form-control" id = "  appointment"
+                       [(ngModel)] = "user.appointment" name = " appointment">
+                    <option>Blood Test </option>
+                <option>Urine Tests</option>
+                <option>Biopsy</option>  <option> Colonoscopy Tests</option>  <option>CT scan</option>  <option>Genetic Tests</option>
+                   
+                    
+                    
+                </select>
+               </div>
+              
+                 
+       
+               <<div class="form-group">
+                <label> Date </label>
+                <input type="date" class ="form-control" id = "appointment_date"
+                    [(ngModel)] = "user.appointment_date" name = "appointment_date">
+            </div>
+            
+            
+            
+               <button class = "btn btn-success" type ="submit">Submit</button>
+           </div>
+      
+
+       
+    

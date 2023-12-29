@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm bg-primary btn-danger">
+    
+    
+    <ul class = "navbar-nav">
+        <link rel="stylesheet" href = "app.component.css">
+        <li class = "nav-item">
+            <a routerLink="home" routerLinkActive="active" class="nav-link" >Home</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="user" routerLinkActive="active" class="nav-link" >Patient List</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="create-user" routerLinkActive="active" class="nav-link" >Add Patient</a>
+        </li>
+        <li class = "nav-item">
+    
+        <li class = "nav-item">
+            <a routerLink="view" routerLinkActive="active" class="nav-link" >View Appointment</a>
+        </li>
+    </ul>
+</nav>
+
+
+<h1 class="text-center"></h1>
+<div class = "container">
+    <router-outlet></router-outlet>
+</div>
